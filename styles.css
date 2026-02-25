@@ -184,8 +184,6 @@ nav {
     font-size: 32px; 
     background-color:rgba(255, 255, 255, 0.95);
     padding: 0 4px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .header__tag h1 {
@@ -201,9 +199,7 @@ nav {
     font-size: 24px;
     background-color:rgba(255, 255, 255, 0.95);
     padding: 0 4px;
-    border-radius: 12px;
     margin-top: 24px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .header__description h2 {
@@ -294,13 +290,13 @@ SEARCHED
     background-color: #f9f9f9;
 }
 
-#searched .row__header {
+/*#searched .row__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     margin-bottom: 32px;
-}
+}*/
 
 .container {
     max-width: 1200px;
@@ -314,22 +310,28 @@ SEARCHED
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 16px;
-    margin-bottom: 32px;
 }
 
 .searched__results {
+    display: flex;
     font-size: 24px;
     color: #0a1f44;
     flex: 0 0 auto;
     margin: 0;
-    white-space: nowrap;
+    white-space: normal;
+}
+
+.row__header > .searched__row,
+.row__header > .filter__row {
+    flex: 1 1 250px;
+    min-width: 200px;
 }
 
 .filter__row {
     display: flex;
     align-items: center;
     gap: 8px;
-    flex: 0 0 auto;
+   /* flex: 0 0 auto;*/
 }
 
 .filter__wrapper {
@@ -354,7 +356,7 @@ SEARCHED
     display: flex;
     align-items: center;
     gap: 4px;
-    flex: wrap;
+    flex-wrap: wrap;
     position: relative;
 }
 
@@ -423,7 +425,7 @@ SEARCHED
 
 /*
 
-SEARCHED
+RESULTS
 
 */
 
@@ -501,4 +503,58 @@ SEARCHED
     margin: 0;
     color: #666;
     font-size: 16px;
+}
+
+/*SMALL PHONES, TABLETS, LARGE SMARTPHONES */
+@media (max-width: 768px) {
+#searched .row__header {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    justify-content: center;
+}
+
+#searched .row__header {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+#searched .row__header > .searched__row {
+    flex: 0 1 auto;
+    width: auto;
+    min-width: 0;
+    text-align: center;
+}
+
+#searched .row__header > .filter__row {
+    flex: 0 1 auto;
+    width: auto;
+    justify-content: center;
+    min-width: 0;
+}
+
+.filter__wrapper h3 {
+    white-space: normal;
+}
+
+.filter__row {
+    justify-content: flex-start;
+}
+
+.input__wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.results-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+}
+
+/*SMALL PHONES, LARGE SMARTPHONES */
+@media (max-width: 550px) {
+
 }
