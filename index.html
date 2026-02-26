@@ -9,18 +9,24 @@
 </head>
 <body>
     <section id="landing">
+        <div class="mobile__menu--btn">
+            <div class="btn--line"></div>
+            <div class="btn--line"></div>
+            <div class="btn--line"></div>
+        </div>
         <nav>
-            <img src=".assets/Movies Library.jpg" class="nav__background" alt="Movie Library">
+            <img src=".assets\Movies Library.jpg" class="nav__background" alt="Movie Library">
             <div class="row nav__row">
                 <div class="nav__logo">
-                    <img class="nav__logo--img" src=".assets/The Movie Library Logo.jpg"
+                    <img class="nav__logo--img" src=".assets\The Movie Library Logo.jpg"
                         alt="The Movie Library Logo">
                     <div class="nav__logo--title"></div>
                 </div>
                 <div class="nav__links">
-                    <a href="#"  class="nav__link">Home</a>
-                    <a href="#"  class="nav__link">Find your Movie</a>
-                    <a href="#"  class="nav__link nav__link--primary">Contact</a>
+                    <a href="#" class="nav__link">Home</a>
+                    <a href="#" class="nav__link">About</a>
+                    <a href="#" class="nav__link">Find your Movie</a>
+                    <a href="#" class="nav__link nav__link--primary">Contact</a>
                 </div>
             </div>
         </nav>
@@ -48,7 +54,7 @@
         <div class="container">
             <div class="row__header">
                 <div class="searched__row"> 
-                    <h2 class="searched__results">Search Results for <span id="searchTerm"></span></h2>
+                    <h2 class="searched__results">Search Results for: <span id="searchTerm"></span></h2>
                 </div>
                 <div class="filter__row">
                     <div class="filter__wrapper">
@@ -72,7 +78,11 @@
         <div id="movieResults" class="results-grid"></div>
     </section>
     <footer>
-
+        <div class="footer__row">
+            <img class="footer__img" src=".assets\The Movie Library Logo.jpg"
+                        alt="The Movie Library Logo">
+            <div class="footer__copyright">&copy; 2026 The Movie Library All Rights Reserved</div>
+        </div>
     </footer>    
 
     <script src="index.js"></script>
