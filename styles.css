@@ -616,6 +616,7 @@ FOOTER
     gap: 0px; 
     align-items: flex-start;
     transform: translateX(-768px);
+    transition: transform 500ms ease-in-out;
 }
 
 .nav__links.show {
