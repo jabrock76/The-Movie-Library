@@ -99,10 +99,10 @@ inputE1.addEventListener('keydown', e => {
 paintSlider(yearFilter);
 selectedRange.textContent = yearFilter.value;
 
-const menuBtn =document.querySelector(".mobile__menu--btn");
+const menuBtn = document.querySelector(".mobile__menu--btn");
 
 
-menuBtn.addEventListener("click", function (){
+menuBtn.addEventListener("click", function () {
 
     const mainNav = document.querySelector(".nav__links")
     mainNav.classList.toggle("show");
